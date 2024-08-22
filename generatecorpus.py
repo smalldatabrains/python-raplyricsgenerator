@@ -16,6 +16,6 @@ corpus=' '.join(data)
 print(corpus)
 print(len(corpus),"letters in our database")
 
-text_file=open("corpus.txt","w")
+text_file=open("../corpus.txt","w")
 text_file.write(corpus)
 text_file.close()
