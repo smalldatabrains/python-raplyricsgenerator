@@ -2,14 +2,14 @@
 An lstm model based on your favorite songs to generate rap lyrics. It's a letter based model which allow to work with smaller dimension than a word bases model.
 
 ## Data collection
-collect data in the data folder : txt files of your favorite song or lyrics
+collect data in the data folder : txt files of your favorite song or lyrics. You can use website such as genius.com to build your corpus. Initila corpus is made of french rap songs. run generatecorpus.py to generate input data according to network needs.
 
 ## Generate corpus
 
 ## Model training
-train the model
+train the model by running kerasrnnclassifier.py. Trained model will be saved with h5 file format.
 
 ## Generate new lyrics
-generate new lyrics according to your taste
+generate new lyrics according to your taste by settting the beginning of a sentence in generator.py and by running it.
 
-The rnn model is a letter based model (generating a new letter with the help of former letters). Word based model was too difficult to achieve.
+The rnn model is a letter based model (generating a new letter with the help of former letters). Word based model was too difficult to achieve in term of computation at that time. Letter based models allow to deal with input dimension = 26 which is quite easy to handle for a computer in deep learning.
