@@ -22,8 +22,8 @@ input_size=len(data)
 num_classes=len(set(data))
 vocabulary=sorted(set(data))
 print("Corpus is made of",num_classes,"letters ")
-time_steps=5
-batch_size=100
+time_steps=10
+batch_size=300
 
 #build dics
 value_to_idx=dict((v,i) for i,v in enumerate(vocabulary))
