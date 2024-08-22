@@ -1,7 +1,6 @@
 #classics
 import matplotlib.pyplot as plt
 import numpy as np
-import random
 #sklearn
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.preprocessing import LabelEncoder
