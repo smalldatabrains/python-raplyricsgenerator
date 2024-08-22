@@ -45,7 +45,7 @@ def toonehot(text):
 print("---------------------------------------")
 print("TEXT GENERATION")
 # load the network weights
-filename = "classifier128.h5"
+filename = "classifier256.h5"
 model=keras.models.load_model(filename)
 
 # pick a random seed
@@ -53,6 +53,7 @@ start = "je su" #input has to be lower case
 integer_list=[value_to_idx[value] for value in start]
 print("initial integer list:",integer_list)
 inputs=np.asarray(toonehot(start))
+print(inputs)
 inputs=np.reshape(inputs,(1,inputs.shape[0],inputs.shape[1]))
 print(type(inputs))
 print(inputs.shape)
