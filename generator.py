@@ -49,7 +49,7 @@ filename = "classifier256.h5"
 model=keras.models.load_model(filename)
 
 # pick a random seed
-start = "je su" #input has to be lower case
+start = "je suis d'" #input has to be lower case
 integer_list=[value_to_idx[value] for value in start]
 print("initial integer list:",integer_list)
 inputs=np.asarray(toonehot(start))
